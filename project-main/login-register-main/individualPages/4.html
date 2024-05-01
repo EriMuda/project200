@@ -1,0 +1,95 @@
+<br />
+<b>Notice</b>:  session_start(): Ignoring session_start() because a session is already active in <b>C:\xampp\htdocs\project-main\login-register-main\individualPages\bookTemplate.php</b> on line <b>3</b><br />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gjenerali i Ushtrise se Vdekur</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .book-details {
+            text-align: left;  /* Align to the left for details */
+            margin-bottom: 20px;
+        }
+
+        .cover-photo img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for smoother hover effect */
+        }
+
+        .cover-photo img:hover {
+            transform: scale(1.05);  /* Enlarge on hover */
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* Darken on hover */
+        }
+    </style>
+    <script>
+        function toggleBookDetails() {
+            const coverPhoto = document.querySelector('.cover-photo img');
+            coverPhoto.classList.toggle('enlarged');
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gjenerali i Ushtrise se Vdekur</h1> <!-- Use htmlspecialchars for safety -->
+        <div class="book-details">
+            <p><strong>Author:</strong> Ismail Kadare</p>
+            <p><strong>Number of Pages:</strong> 300</p>
+            <form action="rate_book.php" method="post">
+            <input type="hidden" name="book_id" value="<br />
+<b>Warning</b>:  Undefined variable $book_id in <b>C:\xampp\htdocs\project-main\login-register-main\individualPages\bookTemplate.php</b> on line <b>91</b><br />
+">  <!-- ID of the book -->
+            <input type="number" name="rating" min="1" max="5" required>  <!-- Rating value -->
+            <button type="submit">Submit Rating</button>
+</form>
+        </div>
+        
+        <div class="cover-photo" onclick="toggleBookDetails()">
+            <img src="data:image/jpeg;base64,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" alt="Cover Photo">
+        </div>
+        
+        <a href="index.php" class="button">Back to Book List</a>
+    </div>
+</body>
+</html>
